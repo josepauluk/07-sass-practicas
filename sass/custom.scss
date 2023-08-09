@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap');
+// font-family: 'Montserrat', sans-serif;
+
+// Se encuentra en node_modules/bootstrap/scss/variables.scss
+$font-family-base: 'Montserrat', sans-serif;
+
+// text-primary
+$primary: #3cb4ab;
+
+// Activar variable margen negativo
+$enable-negative-margins: true;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.nav-form-control {
+    background-color: $primary;
+    border-color: $light;
+}
+
+header {
+    background-image: url(../img/495-1400x500.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
+
+@include media-breakpoint-up(md) { 
+    header {
+        height: 400px;
+    }
+}
+
+// main {
+//     margin-top: -50px;
+// }
